@@ -136,6 +136,9 @@ name = "deranged"
 version = "0.3.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f2696e8a945f658fd14dc3b87242e6b80cd0f36ff04ea560fa39082368847946"
+dependencies = [
+ "serde",
+]
 
 [[package]]
 name = "fnv"
@@ -449,6 +452,8 @@ name = "rinha"
 version = "0.0.1"
 dependencies = [
  "axum",
+ "serde",
+ "serde_json",
  "time",
  "tokio",
  "uuid",
@@ -709,6 +714,7 @@ checksum = "79daa5ed5740825c40b389c5e50312b9c86df53fccd33f281df655642b43869d"
 dependencies = [
  "atomic",
  "getrandom",
+ "serde",
 ]
 
 [[package]]
